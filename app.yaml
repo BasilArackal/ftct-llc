@@ -1,0 +1,29 @@
+application: ftct-llc
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /home
+  static_files: index.html
+  upload: index.html
+
+- url: /our-specialities
+  static_files: our-specialities.html
+  upload: our-specialities.html
+
+- url: /container-specification
+  static_files: container-specification.html
+  upload: container-specification.html
+
+- url: /contact-us
+  static_files: contact-us.html
+  upload: contact-us.html
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
